@@ -1,49 +1,54 @@
-import User from '../models/User.js'
 import { env } from '../config/environment.js'
-import { authService } from '../services/authService.js'
-
-import bcrypt, { hash } from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 
-const generateToken = (userId) => {
-  return jwt.sign({ id: userId }, env.JWT_SECRET, { expiresIn: '7d' })
-}
-
+import { authService } from '../services/authService.js'
+import { sendSuccess } from '../middlewares/successResponseMiddleware.js'
 
 const registerUser = async (req, res, next) => {
   try {
     const result = await authService.registerUser(req.body);
-    res.status(201).json(result);
+    return sendSuccess(res, result, 'Register successfully', 201);
   } catch (error) {
-    // res.status(400).json({ message: error.message });
     next(error)
   }
 }
 
-const loginUser = async (req, res) => {
+const loginUser = async (req, res, next) => {
   try {
-
+    const result = await authService.login(req.body);
+    return sendSuccess(res, result, 'Login successfully', 200);
   } catch (error) {
-    res.status(500).json({ message: 'Server error', error: error.message })
+    next(error)
   }
 }
 
-const getUserProfile = async (req, res) => {
+const getUserProfile = async (req, res, next) => {
   try {
-
+    const result = await authService.getUserProfile({ user: req.user });
+    return sendSuccess(res, result, 'Get user profile successfully', 200);
   } catch (error) {
-    res.status(500).json({ message: 'Server error', error: error.message })
+    next(error);
+  }
+};
+
+const updateUserProfile = async (req, res, next) => {
+  try {
+    const result = await authService.updateUserProfile({ user: req.user, body: req.body });
+    return sendSuccess(res, result, 'Update user profile successfully', 200);
+  } catch (error) {
+    next(error);
   }
 }
 
-const updateUserProfile = async (req, res) => {
+const uploadImage = async (req, res, next) => {
   try {
-
+    const result = await authService.uploadImage(req)
+    return sendSuccess(res, result, "Upload successfully", 200)
   } catch (error) {
-    res.status(500).json({ message: 'Server error', error: error.message })
+    next(error)
   }
 }
 
 export const authController = {
-  registerUser, loginUser, getUserProfile, updateUserProfile
+  registerUser, loginUser, getUserProfile, updateUserProfile, uploadImage
 }
