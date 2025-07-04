@@ -5,6 +5,9 @@ import { errorHandlingMiddleware } from './middlewares/errorHandlingMiddleware.j
 
 import express from 'express'
 import cors from 'cors'
+import { userRoutes } from './routes/userRoutes.js';
+import { taskRoutes } from './routes/taskRoutes.js';
+import { reportRoutes } from './routes/reportRoutes.js';
 
 const startServer = () => {
 
@@ -24,9 +27,9 @@ const startServer = () => {
   app.use(express.json())
 
   app.use("/api/auth", authRoutes)
-  // app.use("/api/users", userRoutes)
-  // app.use("/api/tasks", taskRoutes)
-  // app.use("/api/reports", reportRoutes)
+  app.use("/api/users", userRoutes)
+  app.use("/api/tasks", taskRoutes)
+  app.use("/api/reports", reportRoutes)
 
  // Middleware xử lý lỗi tập trung
   app.use(errorHandlingMiddleware)
