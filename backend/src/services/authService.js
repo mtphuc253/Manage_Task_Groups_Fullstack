@@ -3,6 +3,9 @@ import jwt from 'jsonwebtoken'
 import User from '../models/User.js'
 import { env } from '../config/environment.js'
 import ApiError from '../utils/ApiError.js'
+import { v4 as uuidv4 } from 'uuid'
+import { bucket } from '~/config/firebase.js'
+
 
 const generateToken = (userId) => {
   return jwt.sign({ id: userId }, env.JWT_SECRET, { expiresIn: '7d' })
@@ -117,8 +120,26 @@ const uploadImage = async (req) => {
     throw new ApiError(400, 'No file uploaded')
   }
 
-  const imageUrl = `${req.protocol}://${req.get('host')}/uploads/${req.file.filename}`
-  return { imageUrl }
+  // Tạo tên file duy nhất để tránh trùng
+  const fileName = `${uuidv4()}-${req.file.originalname}`
+  const file = bucket.file(fileName)
+
+  // Upload buffer lên Firebase Storage
+  await file.save(req.file.buffer, {
+    metadata: {
+      contentType: req.file.mimetype,
+      metadata: {
+        firebaseStorageDownloadTokens: uuidv4() // token để truy cập file public
+      }
+    }
+  })
+
+  // Tạo public URL
+  const publicUrl = `https://firebasestorage.googleapis.com/v0/b/${bucket.name}/o/${encodeURIComponent(
+    fileName
+  )}?alt=media`
+
+  return { imageUrl: publicUrl }
 }
 
 
