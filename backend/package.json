@@ -1,12 +1,15 @@
 {
   "name": "backend",
+  "private": true,
   "version": "1.0.0",
+  "author": "MTP",
   "description": "Server for TaskManagement Web ",
-  "license": "ISC",
-  "type": "module",
-  "author": "mtphuc253",
+  "engines": {
+    "node": ">=18.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src --ext js --report-unused-disable-directives --max-warnings 0",
     "clean": "rimraf build && mkdir build",
     "build-babel": "babel ./src -d ./build/src",
     "start": "cross-env node ./src/server.js",
@@ -23,6 +26,7 @@
     "express": "^5.1.0",
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
     "mongoose": "^8.16.1",
     "multer": "^2.0.1",
     "nodemon": "^3.1.10"

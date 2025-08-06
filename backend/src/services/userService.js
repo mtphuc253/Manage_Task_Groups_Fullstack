@@ -1,10 +1,10 @@
-import User from '../models/User.js';
-import Task from '../models/Task.js';
-import ApiError from '../utils/ApiError.js';
+import User from '../models/User.js'
+import Task from '../models/Task.js'
+import ApiError from '../utils/ApiError.js'
 
 
 const getUsers = async () => {
-  const users = await User.find({ role: 'member' }).select('-password');
+  const users = await User.find({ role: 'member' }).select('-password')
 
   // Add task counts to each user
   const usersWithTaskCounts = await Promise.all(users.map(async (user) => {
@@ -25,7 +25,6 @@ const getUsers = async () => {
 
 const getUserById = async ({ id }) => {
   const user = await User.findById(id).select('-password') // loại bỏ mật khẩu
-  console.log("id: ", id)
   if (!user) {
     throw new ApiError(404, 'User not found')
   }
@@ -46,8 +45,6 @@ const deleteUser = async ({ id }) => {
 
   return { message: `User with ID ${id} deleted successfully` }
 }
-
-
 
 export const userService = {
   getUsers, getUserById, deleteUser

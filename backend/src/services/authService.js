@@ -1,18 +1,18 @@
-import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
-import User from '../models/User.js';
-import { env } from '../config/environment.js';
-import ApiError from '../utils/ApiError.js';
+import bcrypt from 'bcryptjs'
+import jwt from 'jsonwebtoken'
+import User from '../models/User.js'
+import { env } from '../config/environment.js'
+import ApiError from '../utils/ApiError.js'
 
 const generateToken = (userId) => {
-  return jwt.sign({ id: userId }, env.JWT_SECRET, { expiresIn: '7d' });
-};
+  return jwt.sign({ id: userId }, env.JWT_SECRET, { expiresIn: '7d' })
+}
 
 
 const registerUser = async ({ name, email, password, profileImageUrl, adminInviteToken }) => {
   const userExists = await User.findOne({ email })
   if (userExists) {
-    throw new Error('User already exists');
+    throw new Error('User already exists')
   }
 
   // Determine user role: Admin if correct token is provide, otherwise Member
@@ -25,8 +25,8 @@ const registerUser = async ({ name, email, password, profileImageUrl, adminInvit
   }
 
   //Hash password
-  const salt = await bcrypt.genSalt(10);
-  const hashedPassword = await bcrypt.hash(password, salt);
+  const salt = await bcrypt.genSalt(10)
+  const hashedPassword = await bcrypt.hash(password, salt)
 
   //Create New User
   const newUser = await User.create({
@@ -35,7 +35,7 @@ const registerUser = async ({ name, email, password, profileImageUrl, adminInvit
     password: hashedPassword,
     profileImageUrl,
     role
-  });
+  })
 
   const token = generateToken(newUser._id)
 
@@ -46,20 +46,20 @@ const registerUser = async ({ name, email, password, profileImageUrl, adminInvit
     role: newUser.role,
     profileImageUrl: newUser.profileImageUrl,
     token
-  };
+  }
 }
 
 
 const login = async ({ email, password }) => {
   const user = await User.findOne({ email })
   if (!user) {
-    throw new ApiError(401, 'Invalid email or password');
+    throw new ApiError(401, 'Invalid email or password')
   }
 
   //Compare password
-  const isMatch = await bcrypt.compare(password, user.password);
+  const isMatch = await bcrypt.compare(password, user.password)
   if (!isMatch) {
-    throw new ApiError(401, 'Invalid email or password');
+    throw new ApiError(401, 'Invalid email or password')
   }
 
   const token = generateToken(user._id)
@@ -71,13 +71,13 @@ const login = async ({ email, password }) => {
     role: user.role,
     profileImageUrl: user.profileImageUrl,
     token
-  };
+  }
 }
 
 const getUserProfile = async ({ user }) => {
-  const userProfile = await User.findById(user._id).select("-password");
+  const userProfile = await User.findById(user._id).select('-password')
   if (!userProfile) {
-    throw new ApiError(404, 'User not found');
+    throw new ApiError(404, 'User not found')
   }
 
   return {
@@ -88,15 +88,15 @@ const getUserProfile = async ({ user }) => {
 const updateUserProfile = async ({ user, body }) => {
   const userProfile = await User.findById(user.id)
   if (!userProfile) {
-    throw new ApiError(404, 'User not found');
+    throw new ApiError(404, 'User not found')
   }
 
   userProfile.name = body.name || userProfile.name
   userProfile.email = body.email || userProfile.email
 
   if (body.password) {
-    const salt = await bcrypt.genSalt(10);
-    user.password = await bcrypt.hash(body.password, salt);
+    const salt = await bcrypt.genSalt(10)
+    user.password = await bcrypt.hash(body.password, salt)
   }
 
   const updateUser = await userProfile.save()
@@ -109,15 +109,15 @@ const updateUserProfile = async ({ user, body }) => {
     role: updateUser.role,
     profileImageUrl: updateUser.profileImageUrl,
     token
-  };
+  }
 }
 
 const uploadImage = async (req) => {
   if (!req.file) {
-    throw new ApiError(400, "No file uploaded")
+    throw new ApiError(400, 'No file uploaded')
   }
 
-  const imageUrl = `${req.protocol}://${req.get("host")}/uploads/${req.file.filename}`
+  const imageUrl = `${req.protocol}://${req.get('host')}/uploads/${req.file.filename}`
   return { imageUrl }
 }
 
