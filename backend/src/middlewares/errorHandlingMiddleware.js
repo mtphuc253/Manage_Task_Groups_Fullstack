@@ -1,12 +1,13 @@
-import { env } from "../config/environment.js"
+/* eslint-disable no-unused-vars */
+import { env } from '../config/environment.js'
 
 
 // Middleware xử lý lỗi tập trung trong ứng dụng Back-end NodeJS (ExpressJS)
 export const errorHandlingMiddleware = (err, req, res, next) => {
 
-  // Nếu dev không cẩn thận thiếu statusCode thì mặc định sẽ để code 500 
-  const statusCode = err.statusCode || 500;
-  const message = err.message || 'Internal Server Error';
+  // Nếu dev không cẩn thận thiếu statusCode thì mặc định sẽ để code 500
+  const statusCode = err.statusCode || 500
+  const message = err.message || 'Internal Server Error'
   // Tạo ra một biến responseError để kiểm soát những gì muốn trả về
   const responseError = {
     statusCode: statusCode,

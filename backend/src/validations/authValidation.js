@@ -1,5 +1,5 @@
-import Joi from 'joi';
-import ApiError from '../utils/ApiError.js';
+import Joi from 'joi'
+import ApiError from '../utils/ApiError.js'
 
 const register = async (req, res, next) => {
   const validCondition = Joi.object({
@@ -33,17 +33,17 @@ const register = async (req, res, next) => {
       }),
     profileImageUrl: Joi.string().uri().optional().allow('', null), // ✅ cho phép bỏ trống hoặc null
     adminInviteToken: Joi.string().optional().allow('', null) // ✅ cho phép bỏ trống hoặc null
-  });
+  })
 
   try {
-    await validCondition.validateAsync(req.body, { abortEarly: false });
-    next();
+    await validCondition.validateAsync(req.body, { abortEarly: false })
+    next()
   } catch (error) {
-    const messages = error.details.map(err => err.message).join('. ');
-    const customError = new ApiError(400, messages);
-    next(customError);
+    const messages = error.details.map(err => err.message).join('. ')
+    const customError = new ApiError(400, messages)
+    next(customError)
   }
-};
+}
 
 const login = async (req, res, next) => {
   const validCondition = Joi.object({
@@ -67,17 +67,17 @@ const login = async (req, res, next) => {
         'string.pattern.base': 'Password must contain at least one letter and one number',
         'any.required': 'Password is required'
       })
-  });
+  })
 
   try {
-    await validCondition.validateAsync(req.body, { abortEarly: false });
-    next();
+    await validCondition.validateAsync(req.body, { abortEarly: false })
+    next()
   } catch (error) {
-    const messages = error.details.map(err => err.message).join('. ');
-    const customError = new ApiError(400, messages);
-    next(customError);
+    const messages = error.details.map(err => err.message).join('. ')
+    const customError = new ApiError(400, messages)
+    next(customError)
   }
-};
+}
 
 const updateUserProfile = async (req, res, next) => {
   const validCondition = Joi.object({
@@ -107,20 +107,20 @@ const updateUserProfile = async (req, res, next) => {
         'string.empty': 'Password cannot be empty',
         'string.min': 'Password must be at least {#limit} characters',
         'string.max': 'Password must not exceed {#limit} characters',
-        'string.pattern.base': 'Password must contain at least one letter and one number',
+        'string.pattern.base': 'Password must contain at least one letter and one number'
       })
-  });
+  })
 
   try {
-    await validCondition.validateAsync(req.body, { abortEarly: false });
-    next();
+    await validCondition.validateAsync(req.body, { abortEarly: false })
+    next()
   } catch (error) {
-    const messages = error.details.map(err => err.message).join('. ');
-    const customError = new ApiError(400, messages);
-    next(customError);
+    const messages = error.details.map(err => err.message).join('. ')
+    const customError = new ApiError(400, messages)
+    next(customError)
   }
-};
+}
 
 export const authValidation = {
   register, login, updateUserProfile
-};
+}

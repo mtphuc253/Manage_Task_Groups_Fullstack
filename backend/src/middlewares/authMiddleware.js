@@ -6,16 +6,16 @@ const protect = async (req, res, next) => {
   try {
     let token = req.headers.authorization
 
-    if (token && token.startsWith("Bearer")) {
-      token = token.split(" ")[1]
+    if (token && token.startsWith('Bearer')) {
+      token = token.split(' ')[1]
       const decoded = jwt.verify(token, env.JWT_SECRET)
-      req.user = await User.findById(decoded.id).select("-password");
-      next();
+      req.user = await User.findById(decoded.id).select('-password')
+      next()
     } else {
-      res.status(401).json({ message: "Unauthorized, no Token" })
+      res.status(401).json({ message: 'Unauthorized, no Token' })
     }
   } catch (error) {
-    res.status(401).json({ message: "Token failed", error: error.message })
+    res.status(401).json({ message: 'Token failed', error: error.message })
   }
 }
 
@@ -23,7 +23,7 @@ const adminOnly = (req, res, next) => {
   if (req.user && req.user.role === 'admin') {
     next()
   } else {
-    res.status(403).json({ message: "Access denied, admin only" })
+    res.status(403).json({ message: 'Access denied, admin only' })
   }
 }
 

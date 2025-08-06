@@ -1,5 +1,5 @@
 import 'dotenv/config'
- 
+
 export const env = {
   AUTHOR: process.env.AUTHOR,
 
