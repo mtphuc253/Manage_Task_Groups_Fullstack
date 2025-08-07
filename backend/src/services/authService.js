@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import User from '../models/User.js'
@@ -124,22 +125,30 @@ const uploadImage = async (req) => {
   const fileName = `${uuidv4()}-${req.file.originalname}`
   const file = bucket.file(fileName)
 
+  const downloadToken = uuidv4()
+
   // Upload buffer lên Firebase Storage
-  await file.save(req.file.buffer, {
-    metadata: {
-      contentType: req.file.mimetype,
+  try {
+    // Upload buffer lên Firebase Storage
+    await file.save(req.file.buffer, {
       metadata: {
-        firebaseStorageDownloadTokens: uuidv4() // token để truy cập file public
+        contentType: req.file.mimetype,
+        metadata: {
+          firebaseStorageDownloadTokens: downloadToken
+        }
       }
-    }
-  })
+    })
 
-  // Tạo public URL
-  const publicUrl = `https://firebasestorage.googleapis.com/v0/b/${bucket.name}/o/${encodeURIComponent(
-    fileName
-  )}?alt=media`
+    const publicUrl = `https://firebasestorage.googleapis.com/v0/b/${bucket.name}/o/${encodeURIComponent(
+      fileName
+    )}?alt=media&token=${downloadToken}`
 
-  return { imageUrl: publicUrl }
+    return { imageUrl: publicUrl }
+
+  } catch (error) {
+    console.error('Error uploading image:', error)
+    throw new ApiError(500, 'Image upload failed. Please try again later.')
+  }
 }
 
 
