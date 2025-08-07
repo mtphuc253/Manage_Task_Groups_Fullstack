@@ -13,12 +13,12 @@
 ## 📸 Project Screenshots
 
 <p align="left">
-  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FLogin.png?alt=media&amp;token=aa38abe5-91b2-4fbe-9990-0e5c6aaa7a8b" width="300">
-  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FAdminDashboard(1).png?alt=media&amp;token=224249ad-9f10-47a2-b656-8327f29ea5d2" width="300">
-  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FManageTask(2).png?alt=media&amp;token=5b0dd3d9-f901-4a35-88d6-a983cb9d2f2a" width="300">
-  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FManageUser.png?alt=media&amp;token=7660dd56-90db-49ec-9682-86f390c25ccb" width="300">
-  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FCreateTask.png?alt=media&token=75dc5304-a6ae-4a9f-8783-1b34fa368cfd" width="300">
-  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FExport_Tasks.png?alt=media&token=14b738b4-c1ce-4ca4-85b2-11153e442c98" width="300">
+  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FLogin.png?alt=media&amp;token=aa38abe5-91b2-4fbe-9990-0e5c6aaa7a8b" width="400">
+  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FAdminDashboard(1).png?alt=media&amp;token=224249ad-9f10-47a2-b656-8327f29ea5d2" width="400">
+  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FManageTask(2).png?alt=media&amp;token=5b0dd3d9-f901-4a35-88d6-a983cb9d2f2a" width="400">
+  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FManageUser.png?alt=media&amp;token=7660dd56-90db-49ec-9682-86f390c25ccb" width="400">
+  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FCreateTask.png?alt=media&token=75dc5304-a6ae-4a9f-8783-1b34fa368cfd" width="400">
+  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FExport_Tasks.png?alt=media&token=14b738b4-c1ce-4ca4-85b2-11153e442c98" width="400">
 </p>
 
 ---
