@@ -1,7 +1,7 @@
 <h1 id="title">MTG - Manage Task Group</h1>
 
 <p>
-  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FManageTask.png?alt=media&amp;token=692e8539-dc05-429a-9639-13826e355739" alt="project-image" width="600">
+  <img src="https://firebasestorage.googleapis.com/v0/b/vivu-image.appspot.com/o/MTG%20Image%2FManageTask.png?alt=media&amp;token=692e8539-dc05-429a-9639-13826e355739" alt="project-image" width="700">
 </p>
 
 <p id="description">
