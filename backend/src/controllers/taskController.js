@@ -84,6 +84,15 @@ const updateTaskCheckList = async (req, res, next) => {
   }
 }
 
+const mockTask = async (req, res, next) => {
+  try {
+    const tasks = await taskService.mockTask()
+    return sendSuccess(res, { tasks }, 'Mock task data successfully', 200)
+  } catch (error) {
+    next(error)
+  }
+}
+
 export const taskController = {
-  getDashboardData, getUserDashboardData, getTasks, getTaskById, createTask, updateTask, deleteTask, updateTaskStatus, updateTaskCheckList
+  getDashboardData, getUserDashboardData, getTasks, getTaskById, createTask, updateTask, deleteTask, updateTaskStatus, updateTaskCheckList, mockTask
 }
