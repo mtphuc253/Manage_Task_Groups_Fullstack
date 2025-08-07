@@ -1,6 +1,7 @@
 import Task from '../models/Task.js'
 import ApiError from '../utils/ApiError.js'
-
+import fs from 'fs'
+import path from 'path'
 
 const getDashboardData = async ({ user }) => {
   const isAdmin = user.role === 'admin'
@@ -375,6 +376,16 @@ const updateTaskCheckList = async ({ id, reqBody, user }) => {
   )
 }
 
+const mockTask = async () => {
+  const mockPath = path.join(__dirname, '..', '..', 'mock_tasks.json')
+  const data = fs.readFileSync(mockPath, 'utf-8')
+  const tasks = JSON.parse(data)
+  // Xóa toàn bộ task cũ (tùy chọn)
+  await Task.deleteMany({})
+  const inserted = await Task.insertMany(tasks)
+  return inserted
+}
+
 export const taskService = {
-  getDashboardData, getUserDashboardData, getTasks, getTaskById, createTask, updateTask, deleteTask, updateTaskStatus, updateTaskCheckList
+  getDashboardData, getUserDashboardData, getTasks, getTaskById, createTask, updateTask, deleteTask, updateTaskStatus, updateTaskCheckList, mockTask
 }

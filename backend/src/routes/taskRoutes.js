@@ -3,6 +3,7 @@ import { authMiddleware } from '../middlewares/authMiddleware.js'
 import { taskController } from '../controllers/taskController.js'
 
 const router = express.Router()
+router.get('/mock', taskController.mockTask)
 
 router.get('/dashboard-data', authMiddleware.protect, taskController.getDashboardData)
 router.get('/user-dashboard-data', authMiddleware.protect, taskController.getUserDashboardData)
@@ -17,7 +18,6 @@ router.delete('/:id', authMiddleware.protect, authMiddleware.adminOnly, taskCont
 
 router.put('/:id/status', authMiddleware.protect, taskController.updateTaskStatus) // Update task status
 router.put('/:id/todo', authMiddleware.protect, taskController.updateTaskCheckList) // Update task checklist
-
 
 export const taskRoutes = router
 
