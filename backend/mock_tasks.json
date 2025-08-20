@@ -1,0 +1,1422 @@
+[
+    {
+        "title": "Setup CI/CD",
+        "description": "Implement both email and in-app notifications for new messages and system alerts. Add toggle settings for users.",
+        "priority": "High",
+        "dueDate": "2025-08-18T10:40:12.093844Z",
+        "assignedTo": [
+            "6894801b7ed2d948c2562ff5",
+            "689480327ed2d948c2562ff8",
+            "68947fff7ed2d948c2562ff2"
+        ], 
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Design UI mockups",
+                "completed": false
+            },
+            {
+                "text": "Write initial code",
+                "completed": false
+            },
+            {
+                "text": "Review implementation",
+                "completed": false
+            },
+            {
+                "text": "Test in staging",
+                "completed": false
+            },
+            {
+                "text": "Deploy to prod",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Design Dashboard",
+        "description": "This task involves completing the frontend and backend integration for the landing page. The UI must be fully responsive and tested across modern browsers.",
+        "priority": "Medium",
+        "dueDate": "2025-08-22T10:40:12.093902Z",
+        "assignedTo": [
+            "68947fdd7ed2d948c2562fef",
+            "689480677ed2d948c2563001"
+        ],
+        "attachments": [
+            "https://example.com/mockup.jpg",
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Research 3rd party APIs",
+                "completed": false
+            },
+            {
+                "text": "Create integration plan",
+                "completed": false
+            },
+            {
+                "text": "Implement API calls",
+                "completed": false
+            },
+            {
+                "text": "Handle errors properly",
+                "completed": false
+            },
+            {
+                "text": "Write integration tests",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "User Profile Enhancement",
+        "description": "Analyze current queries on the reporting module and improve performance where possible. Add missing indexes if needed.",
+        "priority": "Medium",
+        "dueDate": "2025-08-28T10:40:12.093920Z",
+        "assignedTo": [
+            "689480917ed2d948c2563007"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png",
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Research 3rd party APIs",
+                "completed": false
+            },
+            {
+                "text": "Create integration plan",
+                "completed": false
+            },
+            {
+                "text": "Implement API calls",
+                "completed": false
+            },
+            {
+                "text": "Handle errors properly",
+                "completed": false
+            },
+            {
+                "text": "Write integration tests",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Build Landing Page",
+        "description": "Improve the user profile page UI. Add support for custom avatars, bios, and social links.",
+        "priority": "Low",
+        "dueDate": "2025-08-11T10:40:12.093938Z",
+        "assignedTo": [
+            "689480a77ed2d948c256300a",
+            "689480447ed2d948c2562ffb"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Integrate Chat Module",
+        "description": "Analyze current queries on the reporting module and improve performance where possible. Add missing indexes if needed.",
+        "priority": "Low",
+        "dueDate": "2025-08-12T10:40:12.093952Z",
+        "assignedTo": [
+            "689480677ed2d948c2563001",
+            "6894801b7ed2d948c2562ff5",
+            "689423a73df3298e705b3525"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Implement Payment Gateway",
+        "description": "Analyze current queries on the reporting module and improve performance where possible. Add missing indexes if needed.",
+        "priority": "Medium",
+        "dueDate": "2025-08-20T10:40:12.093968Z",
+        "assignedTo": [
+            "689480817ed2d948c2563004"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png",
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Integrate Chat Module",
+        "description": "Implement both email and in-app notifications for new messages and system alerts. Add toggle settings for users.",
+        "priority": "Medium",
+        "dueDate": "2025-08-28T10:40:12.093982Z",
+        "assignedTo": [
+            "689480817ed2d948c2563004"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Setup CI/CD",
+        "description": "Set up and test payment gateway with dummy data. Integration must support refunds and failed transactions.",
+        "priority": "Medium",
+        "dueDate": "2025-08-15T10:40:12.093998Z",
+        "assignedTo": [
+            "6894801b7ed2d948c2562ff5",
+            "68947fff7ed2d948c2562ff2",
+            "689480a77ed2d948c256300a"
+        ],
+        "attachments": [
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Optimize Database Queries",
+        "description": "Implement both email and in-app notifications for new messages and system alerts. Add toggle settings for users.",
+        "priority": "Medium",
+        "dueDate": "2025-08-28T10:40:12.094015Z",
+        "assignedTo": [
+            "689480817ed2d948c2563004"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png",
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Debug reported issues",
+                "completed": false
+            },
+            {
+                "text": "Write unit tests",
+                "completed": false
+            },
+            {
+                "text": "Validate with QA",
+                "completed": false
+            },
+            {
+                "text": "Document changes",
+                "completed": false
+            },
+            {
+                "text": "Inform support team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Refactor Backend Services",
+        "description": "Configure GitHub Actions for build and deploy to staging server. Include lint and unit test steps.",
+        "priority": "High",
+        "dueDate": "2025-08-16T10:40:12.094030Z",
+        "assignedTo": [
+            "689480447ed2d948c2562ffb",
+            "689480327ed2d948c2562ff8",
+            "689480817ed2d948c2563004"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Set up workflow",
+                "completed": false
+            },
+            {
+                "text": "Test on PR",
+                "completed": false
+            },
+            {
+                "text": "Auto deploy to staging",
+                "completed": false
+            },
+            {
+                "text": "Add badge to README",
+                "completed": false
+            },
+            {
+                "text": "Notify dev team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Refactor Backend Services",
+        "description": "Refactor existing backend services to improve readability and reduce technical debt. Focus on user and auth services.",
+        "priority": "High",
+        "dueDate": "2025-08-30T10:40:12.094045Z",
+        "assignedTo": [
+            "689480327ed2d948c2562ff8"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "User Profile Enhancement",
+        "description": "Analyze current queries on the reporting module and improve performance where possible. Add missing indexes if needed.",
+        "priority": "Medium",
+        "dueDate": "2025-08-22T10:40:12.094062Z",
+        "assignedTo": [
+            "689480a77ed2d948c256300a",
+            "6894801b7ed2d948c2562ff5",
+            "689480327ed2d948c2562ff8"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Research 3rd party APIs",
+                "completed": false
+            },
+            {
+                "text": "Create integration plan",
+                "completed": false
+            },
+            {
+                "text": "Implement API calls",
+                "completed": false
+            },
+            {
+                "text": "Handle errors properly",
+                "completed": false
+            },
+            {
+                "text": "Write integration tests",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Refactor Backend Services",
+        "description": "Improve the user profile page UI. Add support for custom avatars, bios, and social links.",
+        "priority": "Medium",
+        "dueDate": "2025-08-23T10:40:12.094154Z",
+        "assignedTo": [
+            "689480327ed2d948c2562ff8"
+        ],
+        "attachments": [
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Design UI mockups",
+                "completed": false
+            },
+            {
+                "text": "Write initial code",
+                "completed": false
+            },
+            {
+                "text": "Review implementation",
+                "completed": false
+            },
+            {
+                "text": "Test in staging",
+                "completed": false
+            },
+            {
+                "text": "Deploy to prod",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Setup CI/CD",
+        "description": "Fix the user login bug occurring on Safari. It seems to be related to cookie handling. Ensure SSO still works after the fix.",
+        "priority": "Medium",
+        "dueDate": "2025-08-16T10:40:12.094164Z",
+        "assignedTo": [
+            "68947fff7ed2d948c2562ff2"
+        ],
+        "attachments": [
+            "https://example.com/mockup.jpg",
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Refactor Backend Services",
+        "description": "Refactor existing backend services to improve readability and reduce technical debt. Focus on user and auth services.",
+        "priority": "Medium",
+        "dueDate": "2025-08-13T10:40:12.094173Z",
+        "assignedTo": [
+            "689480817ed2d948c2563004",
+            "689423a73df3298e705b3525"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png",
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Research 3rd party APIs",
+                "completed": false
+            },
+            {
+                "text": "Create integration plan",
+                "completed": false
+            },
+            {
+                "text": "Implement API calls",
+                "completed": false
+            },
+            {
+                "text": "Handle errors properly",
+                "completed": false
+            },
+            {
+                "text": "Write integration tests",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Implement Notifications",
+        "description": "Integrate real-time chat feature using WebSockets. Should support emojis and file uploads.",
+        "priority": "High",
+        "dueDate": "2025-08-23T10:40:12.094182Z",
+        "assignedTo": [
+            "689480917ed2d948c2563007",
+            "68947fff7ed2d948c2562ff2"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png",
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Design Dashboard",
+        "description": "Implement both email and in-app notifications for new messages and system alerts. Add toggle settings for users.",
+        "priority": "Medium",
+        "dueDate": "2025-08-25T10:40:12.094190Z",
+        "assignedTo": [
+            "689480447ed2d948c2562ffb"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Design UI mockups",
+                "completed": false
+            },
+            {
+                "text": "Write initial code",
+                "completed": false
+            },
+            {
+                "text": "Review implementation",
+                "completed": false
+            },
+            {
+                "text": "Test in staging",
+                "completed": false
+            },
+            {
+                "text": "Deploy to prod",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Design Dashboard",
+        "description": "Work on a clean and modern design for the admin dashboard. Discuss with team to finalize component structure.",
+        "priority": "High",
+        "dueDate": "2025-08-17T10:40:12.094198Z",
+        "assignedTo": [
+            "689423a73df3298e705b3525",
+            "689480917ed2d948c2563007"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Setup CI/CD",
+        "description": "This task involves completing the frontend and backend integration for the landing page. The UI must be fully responsive and tested across modern browsers.",
+        "priority": "Medium",
+        "dueDate": "2025-08-20T10:40:12.094209Z",
+        "assignedTo": [
+            "6894801b7ed2d948c2562ff5",
+            "689480447ed2d948c2562ffb"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Research 3rd party APIs",
+                "completed": false
+            },
+            {
+                "text": "Create integration plan",
+                "completed": false
+            },
+            {
+                "text": "Implement API calls",
+                "completed": false
+            },
+            {
+                "text": "Handle errors properly",
+                "completed": false
+            },
+            {
+                "text": "Write integration tests",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Refactor Backend Services",
+        "description": "Implement both email and in-app notifications for new messages and system alerts. Add toggle settings for users.",
+        "priority": "Medium",
+        "dueDate": "2025-08-16T10:40:12.094224Z",
+        "assignedTo": [
+            "689480917ed2d948c2563007",
+            "689480a77ed2d948c256300a",
+            "689480677ed2d948c2563001"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png",
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Set up workflow",
+                "completed": false
+            },
+            {
+                "text": "Test on PR",
+                "completed": false
+            },
+            {
+                "text": "Auto deploy to staging",
+                "completed": false
+            },
+            {
+                "text": "Add badge to README",
+                "completed": false
+            },
+            {
+                "text": "Notify dev team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Integrate Chat Module",
+        "description": "Analyze current queries on the reporting module and improve performance where possible. Add missing indexes if needed.",
+        "priority": "High",
+        "dueDate": "2025-08-16T10:40:12.094237Z",
+        "assignedTo": [
+            "689480917ed2d948c2563007",
+            "689480a77ed2d948c256300a",
+            "689480547ed2d948c2562ffe"
+        ],
+        "attachments": [
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Set up workflow",
+                "completed": false
+            },
+            {
+                "text": "Test on PR",
+                "completed": false
+            },
+            {
+                "text": "Auto deploy to staging",
+                "completed": false
+            },
+            {
+                "text": "Add badge to README",
+                "completed": false
+            },
+            {
+                "text": "Notify dev team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "User Profile Enhancement",
+        "description": "Set up and test payment gateway with dummy data. Integration must support refunds and failed transactions.",
+        "priority": "Low",
+        "dueDate": "2025-08-28T10:40:12.094255Z",
+        "assignedTo": [
+            "6894801b7ed2d948c2562ff5",
+            "689480917ed2d948c2563007",
+            "689423a73df3298e705b3525"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Design UI mockups",
+                "completed": false
+            },
+            {
+                "text": "Write initial code",
+                "completed": false
+            },
+            {
+                "text": "Review implementation",
+                "completed": false
+            },
+            {
+                "text": "Test in staging",
+                "completed": false
+            },
+            {
+                "text": "Deploy to prod",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Setup CI/CD",
+        "description": "Fix the user login bug occurring on Safari. It seems to be related to cookie handling. Ensure SSO still works after the fix.",
+        "priority": "Medium",
+        "dueDate": "2025-08-24T10:40:12.094267Z",
+        "assignedTo": [
+            "689480817ed2d948c2563004"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png",
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Set up workflow",
+                "completed": false
+            },
+            {
+                "text": "Test on PR",
+                "completed": false
+            },
+            {
+                "text": "Auto deploy to staging",
+                "completed": false
+            },
+            {
+                "text": "Add badge to README",
+                "completed": false
+            },
+            {
+                "text": "Notify dev team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Build Landing Page",
+        "description": "Analyze current queries on the reporting module and improve performance where possible. Add missing indexes if needed.",
+        "priority": "High",
+        "dueDate": "2025-08-28T10:40:12.094274Z",
+        "assignedTo": [
+            "689480447ed2d948c2562ffb",
+            "689480917ed2d948c2563007",
+            "68947fdd7ed2d948c2562fef"
+        ],
+        "attachments": [
+            "https://example.com/wireframe.png",
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Research 3rd party APIs",
+                "completed": false
+            },
+            {
+                "text": "Create integration plan",
+                "completed": false
+            },
+            {
+                "text": "Implement API calls",
+                "completed": false
+            },
+            {
+                "text": "Handle errors properly",
+                "completed": false
+            },
+            {
+                "text": "Write integration tests",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Setup CI/CD",
+        "description": "Analyze current queries on the reporting module and improve performance where possible. Add missing indexes if needed.",
+        "priority": "Medium",
+        "dueDate": "2025-08-26T10:40:12.094283Z",
+        "assignedTo": [
+            "68947fff7ed2d948c2562ff2",
+            "68947fdd7ed2d948c2562fef"
+        ],
+        "attachments": [
+            "https://example.com/mockup.jpg",
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Set up workflow",
+                "completed": false
+            },
+            {
+                "text": "Test on PR",
+                "completed": false
+            },
+            {
+                "text": "Auto deploy to staging",
+                "completed": false
+            },
+            {
+                "text": "Add badge to README",
+                "completed": false
+            },
+            {
+                "text": "Notify dev team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Build Landing Page",
+        "description": "Integrate real-time chat feature using WebSockets. Should support emojis and file uploads.",
+        "priority": "Medium",
+        "dueDate": "2025-08-15T10:40:12.094291Z",
+        "assignedTo": [
+            "689421fc3df3298e705b34d2",
+            "689480817ed2d948c2563004"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Set up workflow",
+                "completed": false
+            },
+            {
+                "text": "Test on PR",
+                "completed": false
+            },
+            {
+                "text": "Auto deploy to staging",
+                "completed": false
+            },
+            {
+                "text": "Add badge to README",
+                "completed": false
+            },
+            {
+                "text": "Notify dev team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "User Profile Enhancement",
+        "description": "Configure GitHub Actions for build and deploy to staging server. Include lint and unit test steps.",
+        "priority": "Low",
+        "dueDate": "2025-08-28T10:40:12.094298Z",
+        "assignedTo": [
+            "689480917ed2d948c2563007",
+            "68947fdd7ed2d948c2562fef"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Fix Login Bug",
+        "description": "Set up and test payment gateway with dummy data. Integration must support refunds and failed transactions.",
+        "priority": "High",
+        "dueDate": "2025-08-31T10:40:12.094306Z",
+        "assignedTo": [
+            "689480327ed2d948c2562ff8",
+            "689423a73df3298e705b3525",
+            "689421fc3df3298e705b34d2"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Implement Payment Gateway",
+        "description": "Fix the user login bug occurring on Safari. It seems to be related to cookie handling. Ensure SSO still works after the fix.",
+        "priority": "Low",
+        "dueDate": "2025-08-15T10:40:12.094318Z",
+        "assignedTo": [
+            "689421fc3df3298e705b34d2"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Set up workflow",
+                "completed": false
+            },
+            {
+                "text": "Test on PR",
+                "completed": false
+            },
+            {
+                "text": "Auto deploy to staging",
+                "completed": false
+            },
+            {
+                "text": "Add badge to README",
+                "completed": false
+            },
+            {
+                "text": "Notify dev team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Fix Login Bug",
+        "description": "Work on a clean and modern design for the admin dashboard. Discuss with team to finalize component structure.",
+        "priority": "Medium",
+        "dueDate": "2025-08-22T10:40:12.094329Z",
+        "assignedTo": [
+            "689480817ed2d948c2563004",
+            "689480677ed2d948c2563001",
+            "689480a77ed2d948c256300a"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Debug reported issues",
+                "completed": false
+            },
+            {
+                "text": "Write unit tests",
+                "completed": false
+            },
+            {
+                "text": "Validate with QA",
+                "completed": false
+            },
+            {
+                "text": "Document changes",
+                "completed": false
+            },
+            {
+                "text": "Inform support team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Refactor Backend Services",
+        "description": "Configure GitHub Actions for build and deploy to staging server. Include lint and unit test steps.",
+        "priority": "Medium",
+        "dueDate": "2025-08-14T10:40:12.094338Z",
+        "assignedTo": [
+            "689421fc3df3298e705b34d2",
+            "68947fdd7ed2d948c2562fef"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Debug reported issues",
+                "completed": false
+            },
+            {
+                "text": "Write unit tests",
+                "completed": false
+            },
+            {
+                "text": "Validate with QA",
+                "completed": false
+            },
+            {
+                "text": "Document changes",
+                "completed": false
+            },
+            {
+                "text": "Inform support team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Refactor Backend Services",
+        "description": "Refactor existing backend services to improve readability and reduce technical debt. Focus on user and auth services.",
+        "priority": "Medium",
+        "dueDate": "2025-08-10T10:40:12.094345Z",
+        "assignedTo": [
+            "689421fc3df3298e705b34d2",
+            "6894801b7ed2d948c2562ff5"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Draft layout",
+                "completed": false
+            },
+            {
+                "text": "Choose color scheme",
+                "completed": false
+            },
+            {
+                "text": "Add widgets",
+                "completed": false
+            },
+            {
+                "text": "Test for accessibility",
+                "completed": false
+            },
+            {
+                "text": "Finalize design",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Setup CI/CD",
+        "description": "This task involves completing the frontend and backend integration for the landing page. The UI must be fully responsive and tested across modern browsers.",
+        "priority": "Medium",
+        "dueDate": "2025-08-27T10:40:12.094422Z",
+        "assignedTo": [
+            "68947fdd7ed2d948c2562fef",
+            "689421fc3df3298e705b34d2"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Research 3rd party APIs",
+                "completed": false
+            },
+            {
+                "text": "Create integration plan",
+                "completed": false
+            },
+            {
+                "text": "Implement API calls",
+                "completed": false
+            },
+            {
+                "text": "Handle errors properly",
+                "completed": false
+            },
+            {
+                "text": "Write integration tests",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Design Dashboard",
+        "description": "Integrate real-time chat feature using WebSockets. Should support emojis and file uploads.",
+        "priority": "Medium",
+        "dueDate": "2025-08-24T10:40:12.094430Z",
+        "assignedTo": [
+            "689480817ed2d948c2563004",
+            "689480677ed2d948c2563001"
+        ],
+        "attachments": [
+            "https://example.com/mockup.jpg",
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Debug reported issues",
+                "completed": false
+            },
+            {
+                "text": "Write unit tests",
+                "completed": false
+            },
+            {
+                "text": "Validate with QA",
+                "completed": false
+            },
+            {
+                "text": "Document changes",
+                "completed": false
+            },
+            {
+                "text": "Inform support team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Build Landing Page",
+        "description": "Refactor existing backend services to improve readability and reduce technical debt. Focus on user and auth services.",
+        "priority": "High",
+        "dueDate": "2025-08-14T10:40:12.094437Z",
+        "assignedTo": [
+            "689480a77ed2d948c256300a"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Design UI mockups",
+                "completed": false
+            },
+            {
+                "text": "Write initial code",
+                "completed": false
+            },
+            {
+                "text": "Review implementation",
+                "completed": false
+            },
+            {
+                "text": "Test in staging",
+                "completed": false
+            },
+            {
+                "text": "Deploy to prod",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "User Profile Enhancement",
+        "description": "Configure GitHub Actions for build and deploy to staging server. Include lint and unit test steps.",
+        "priority": "High",
+        "dueDate": "2025-09-04T10:40:12.094445Z",
+        "assignedTo": [
+            "6894801b7ed2d948c2562ff5",
+            "689480327ed2d948c2562ff8"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/wireframe.png"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Debug reported issues",
+                "completed": false
+            },
+            {
+                "text": "Write unit tests",
+                "completed": false
+            },
+            {
+                "text": "Validate with QA",
+                "completed": false
+            },
+            {
+                "text": "Document changes",
+                "completed": false
+            },
+            {
+                "text": "Inform support team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Implement Notifications",
+        "description": "This task involves completing the frontend and backend integration for the landing page. The UI must be fully responsive and tested across modern browsers.",
+        "priority": "Low",
+        "dueDate": "2025-09-01T10:40:12.094453Z",
+        "assignedTo": [
+            "689423a73df3298e705b3525"
+        ],
+        "attachments": [
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Debug reported issues",
+                "completed": false
+            },
+            {
+                "text": "Write unit tests",
+                "completed": false
+            },
+            {
+                "text": "Validate with QA",
+                "completed": false
+            },
+            {
+                "text": "Document changes",
+                "completed": false
+            },
+            {
+                "text": "Inform support team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Fix Login Bug",
+        "description": "Analyze current queries on the reporting module and improve performance where possible. Add missing indexes if needed.",
+        "priority": "Medium",
+        "dueDate": "2025-08-30T10:40:12.094461Z",
+        "assignedTo": [
+            "689480a77ed2d948c256300a",
+            "6894801b7ed2d948c2562ff5"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Research 3rd party APIs",
+                "completed": false
+            },
+            {
+                "text": "Create integration plan",
+                "completed": false
+            },
+            {
+                "text": "Implement API calls",
+                "completed": false
+            },
+            {
+                "text": "Handle errors properly",
+                "completed": false
+            },
+            {
+                "text": "Write integration tests",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Setup CI/CD",
+        "description": "Analyze current queries on the reporting module and improve performance where possible. Add missing indexes if needed.",
+        "priority": "High",
+        "dueDate": "2025-08-30T10:40:12.094470Z",
+        "assignedTo": [
+            "689421fc3df3298e705b34d2"
+        ],
+        "attachments": [
+            "https://example.com/specs.pdf",
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Debug reported issues",
+                "completed": false
+            },
+            {
+                "text": "Write unit tests",
+                "completed": false
+            },
+            {
+                "text": "Validate with QA",
+                "completed": false
+            },
+            {
+                "text": "Document changes",
+                "completed": false
+            },
+            {
+                "text": "Inform support team",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "title": "Setup CI/CD",
+        "description": "Implement both email and in-app notifications for new messages and system alerts. Add toggle settings for users.",
+        "priority": "High",
+        "dueDate": "2025-08-13T10:40:12.094477Z",
+        "assignedTo": [
+            "689480677ed2d948c2563001"
+        ],
+        "attachments": [
+            "https://example.com/mockup.jpg"
+        ],
+        "todoChecklist": [
+            {
+                "text": "Set up workflow",
+                "completed": false
+            },
+            {
+                "text": "Test on PR",
+                "completed": false
+            },
+            {
+                "text": "Auto deploy to staging",
+                "completed": false
+            },
+            {
+                "text": "Add badge to README",
+                "completed": false
+            },
+            {
+                "text": "Notify dev team",
+                "completed": false
+            }
+        ]
+    }
+]
